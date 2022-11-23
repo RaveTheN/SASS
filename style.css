@@ -1,0 +1,47 @@
+.container h2, .container .exercise-title {
+  color: green;
+  text-align: center;
+}
+
+.container {
+  border: 1px solid red;
+}
+.container .exercise-title {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-thickness: 0.0625rem;
+}
+.container h2 {
+  border: 0.0625rem solid red;
+  margin: 0 40%;
+  padding: 1rem;
+}
+.container section {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.container article {
+  text-align: center;
+  border: 0.0625rem solid green;
+  padding: 0.3125rem;
+}
+.container article.red {
+  color: red;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+.container article.blue {
+  color: blue;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+.container article.lorem {
+  padding: 0.3125rem;
+  width: 100%;
+  color: green;
+  border: 0.0625rem solid blue;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
