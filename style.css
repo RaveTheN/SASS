@@ -1,0 +1,40 @@
+.exercise {
+  border: 1px solid red;
+}
+.exercise .exercise-title {
+  color: green;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-thickness: 1px;
+}
+.exercise section {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+.exercise article {
+  text-align: center;
+  border: 1px solid green;
+  padding: 5px;
+}
+.exercise article.red {
+  color: red;
+  border: 1px solid green;
+  font-size: 1rem;
+}
+.exercise article.blue {
+  color: blue;
+  border: 1px solid green;
+  font-size: 1rem;
+}
+.exercise article.lorem {
+  padding: 5px;
+  width: 100%;
+  color: green;
+  border: 1px solid blue;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
