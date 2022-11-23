@@ -1,0 +1,57 @@
+@use "sass:color";
+
+$color-primary: red;
+$color-secondary: blue;
+$color-tertiary: green;
+
+@function toRem($value) {
+    $remValue: calc($value / 16) + rem; 
+    @return $remValue;
+}
+
+@mixin palette ($color, $border-color: green, $font-size: 1rem){
+    color: $color;
+    border: toRem(1) solid $border-color;
+    font-size: $font-size;
+}
+
+.exercise {
+border: 1px solid $color-primary;
+
+    .exercise-title {
+        color: $color-tertiary;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: $color-secondary;
+        text-decoration-thickness: toRem(1) ;
+    } 
+
+    $margin: toRem(16);
+    section {
+    margin: $margin;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+    article {
+    text-align: center;
+    border: toRem(1) solid $color-tertiary;
+    padding: toRem(5);
+    &.red {
+        @include palette(red, green, 1rem);
+    }
+
+    &.blue {
+        @include palette(blue, green, 1rem);
+    }
+    &.lorem {
+        padding: toRem(5);
+        width: 100%;
+        @include palette(green, blue, 24px);
+
+    }
+
+}
+
+}
