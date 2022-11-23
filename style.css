@@ -1,4 +1,4 @@
-.container h2, .container .exercise-title {
+.container article, .container h2, .container .exercise-title {
   color: green;
   text-align: center;
 }
@@ -12,7 +12,9 @@
   text-decoration-thickness: 0.0625rem;
 }
 .container h2 {
+  color: green;
   border: 0.0625rem solid red;
+  font-size: 1rem;
   margin: 0 40%;
   padding: 1rem;
 }
@@ -22,7 +24,6 @@
   flex-direction: row;
 }
 .container article {
-  text-align: center;
   border: 0.0625rem solid green;
   padding: 0.3125rem;
 }
