@@ -1,0 +1,5 @@
+
+@function rem($value: 16) {
+    $final-value: calc($value/16);
+    @return $final-value + "rem";
+}
