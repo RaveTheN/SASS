@@ -52,25 +52,25 @@ $third-color: green;
 
     .devilsrow {
         justify-content: space-between;
+
+        @for $var from 1 to 20 {
+            :nth-child(#{$var}) {
+             background-color: color.adjust(white, $lightness: -5% * $var);
+              color: color.adjust(black, $lightness: +5% * $var);
+           }
+           @if $var == 10 {
+            :nth-child(#{$var}) {
+                   @include palette($first-color, $first-color, 1rem);
+                    background-color: $second-color;
+               }
+           }
+       }
     
         div {
     
             @include palette(inherit, $first-color, 1rem);
             width: toRem(45);
             height: toRem(45);
-    
-            @for $var from 1 to 20 {
-                 &.v#{$var} {
-                  background-color: color.adjust(white, $lightness: -5% * $var);
-                   color: color.adjust(black, $lightness: +5% * $var);
-                }
-                @if $var == 10 {
-                    &.v#{$var} {
-                        @include palette($first-color, $first-color, 1rem);
-                         background-color: $second-color;
-                    }
-                }
-            }
     
             $sizes: 1rem, 2rem, 3rem;
             @each $size in $sizes {
