@@ -1,0 +1,150 @@
+article, .container h2, .container .exercise-title {
+  color: green;
+  text-align: center;
+}
+
+.container {
+  border: 1px solid red;
+}
+.container .exercise-title {
+  text-decoration: underline;
+  text-decoration-color: blue;
+  text-decoration-thickness: 0.0625rem;
+}
+.container h2 {
+  color: green;
+  border: 0.0625rem solid red;
+  font-size: 1rem;
+  margin: 0 40%;
+  padding: 1rem;
+}
+.container section {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+.container .devilsrow {
+  justify-content: space-between;
+}
+.container .devilsrow div {
+  color: inherit;
+  border: 0.0625rem solid red;
+  font-size: 1rem;
+  width: 2.8125rem;
+  height: 2.8125rem;
+}
+.container .devilsrow div.v1 {
+  background-color: #f2f2f2;
+  color: #0d0d0d;
+}
+.container .devilsrow div.v2 {
+  background-color: #e6e6e6;
+  color: #1a1a1a;
+}
+.container .devilsrow div.v3 {
+  background-color: #d9d9d9;
+  color: #262626;
+}
+.container .devilsrow div.v4 {
+  background-color: #cccccc;
+  color: #333333;
+}
+.container .devilsrow div.v5 {
+  background-color: #bfbfbf;
+  color: #404040;
+}
+.container .devilsrow div.v6 {
+  background-color: #b3b3b3;
+  color: #4d4d4d;
+}
+.container .devilsrow div.v7 {
+  background-color: #a6a6a6;
+  color: #595959;
+}
+.container .devilsrow div.v8 {
+  background-color: #999999;
+  color: #666666;
+}
+.container .devilsrow div.v9 {
+  background-color: #8c8c8c;
+  color: #737373;
+}
+.container .devilsrow div.v10 {
+  background-color: gray;
+  color: gray;
+}
+.container .devilsrow div.v10 {
+  color: red;
+  border: 0.0625rem solid red;
+  font-size: 1rem;
+  background-color: blue;
+}
+.container .devilsrow div.v11 {
+  background-color: #737373;
+  color: #8c8c8c;
+}
+.container .devilsrow div.v12 {
+  background-color: #666666;
+  color: #999999;
+}
+.container .devilsrow div.v13 {
+  background-color: #595959;
+  color: #a6a6a6;
+}
+.container .devilsrow div.v14 {
+  background-color: #4d4d4d;
+  color: #b3b3b3;
+}
+.container .devilsrow div.v15 {
+  background-color: #404040;
+  color: #bfbfbf;
+}
+.container .devilsrow div.v16 {
+  background-color: #333333;
+  color: #cccccc;
+}
+.container .devilsrow div.v17 {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+.container .devilsrow div.v18 {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+}
+.container .devilsrow div.v19 {
+  background-color: #0d0d0d;
+  color: #f2f2f2;
+}
+.container .devilsrow div.fs-1rem {
+  font-size: 1rem;
+}
+.container .devilsrow div.fs-2rem {
+  font-size: 2rem;
+}
+.container .devilsrow div.fs-3rem {
+  font-size: 3rem;
+}
+
+article {
+  border: 0.0625rem solid green;
+  padding: 0.3125rem;
+}
+article.red {
+  color: red;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+article.blue {
+  color: blue;
+  border: 0.0625rem solid green;
+  font-size: 1rem;
+}
+article.lorem {
+  padding: 0.3125rem;
+  width: 100%;
+  color: green;
+  border: 0.0625rem solid blue;
+  font-size: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
