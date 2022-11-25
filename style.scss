@@ -1,5 +1,7 @@
 @use "sass:color";
 
+$standard-border-px: 1;
+
 $color-primary: red;
 $color-secondary: blue;
 $color-tertiary: green;
@@ -11,12 +13,12 @@ $color-tertiary: green;
 
 @mixin palette ($color, $border-color: green, $font-size: 1rem){
     color: $color;
-    border: toRem(1) solid $border-color;
+    border: toRem($standard-border-px) solid $border-color;
     font-size: $font-size;
 }
 
 .exercise {
-border: 1px solid $color-primary;
+border: toRem($standard-border-px) solid $color-primary;
 
     .exercise-title {
         color: $color-tertiary;
@@ -36,7 +38,7 @@ border: 1px solid $color-primary;
 
     article {
     text-align: center;
-    border: toRem(1) solid $color-tertiary;
+    border: toRem($standard-border-px) solid $color-tertiary;
     padding: toRem(5);
     &.red {
         @include palette(red, green, 1rem);
@@ -48,7 +50,7 @@ border: 1px solid $color-primary;
     &.lorem {
         padding: toRem(5);
         width: 100%;
-        @include palette(green, blue, 24px);
+        @include palette(green, blue, toRem(24));
 
     }
 

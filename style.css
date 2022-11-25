@@ -1,5 +1,5 @@
 .exercise {
-  border: 1px solid red;
+  border: 0.0625rem solid red;
 }
 .exercise .exercise-title {
   color: green;
@@ -34,7 +34,7 @@
   width: 100%;
   color: green;
   border: 0.0625rem solid blue;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
