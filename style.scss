@@ -26,7 +26,7 @@ $standard-border-px: 1;
 
 
 .container {
-    border: 1px solid $first-color;
+    border: toRem($standard-border-px) solid $first-color;
     $margin: toRem(16);
 
     .exercise-title {
@@ -54,7 +54,7 @@ $standard-border-px: 1;
     article {
     
     @extend %text;
-    border: toRem($standard-border-px) solid $third-color;
+    border: toRem(1) solid $third-color;
     padding: toRem(5);
     &.red {
         @include palette(red, green, 1rem);
