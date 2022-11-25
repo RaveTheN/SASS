@@ -4,7 +4,7 @@ article, .container h2, .container .exercise-title {
 }
 
 .container {
-  border: 1px solid red;
+  border: 0.0625rem solid red;
 }
 .container .exercise-title {
   text-decoration: underline;
@@ -23,105 +23,105 @@ article, .container h2, .container .exercise-title {
   display: flex;
   flex-direction: row;
 }
-.container .devilsrow {
+.container .shading-row {
   justify-content: space-between;
 }
-.container .devilsrow :nth-child(1) {
+.container .shading-row :nth-child(1) {
   background-color: #f2f2f2;
   color: #0d0d0d;
 }
-.container .devilsrow :nth-child(2) {
+.container .shading-row :nth-child(2) {
   background-color: #e6e6e6;
   color: #1a1a1a;
 }
-.container .devilsrow :nth-child(3) {
+.container .shading-row :nth-child(3) {
   background-color: #d9d9d9;
   color: #262626;
 }
-.container .devilsrow :nth-child(4) {
+.container .shading-row :nth-child(4) {
   background-color: #cccccc;
   color: #333333;
 }
-.container .devilsrow :nth-child(5) {
+.container .shading-row :nth-child(5) {
   background-color: #bfbfbf;
   color: #404040;
 }
-.container .devilsrow :nth-child(6) {
+.container .shading-row :nth-child(6) {
   background-color: #b3b3b3;
   color: #4d4d4d;
 }
-.container .devilsrow :nth-child(7) {
+.container .shading-row :nth-child(7) {
   background-color: #a6a6a6;
   color: #595959;
 }
-.container .devilsrow :nth-child(8) {
+.container .shading-row :nth-child(8) {
   background-color: #999999;
   color: #666666;
 }
-.container .devilsrow :nth-child(9) {
+.container .shading-row :nth-child(9) {
   background-color: #8c8c8c;
   color: #737373;
 }
-.container .devilsrow :nth-child(10) {
+.container .shading-row :nth-child(10) {
   background-color: gray;
   color: gray;
 }
-.container .devilsrow :nth-child(10) {
+.container .shading-row :nth-child(10) {
   color: red;
   border: 0.0625rem solid red;
   font-size: 1rem;
   background-color: blue;
 }
-.container .devilsrow :nth-child(11) {
+.container .shading-row :nth-child(11) {
   background-color: #737373;
   color: #8c8c8c;
 }
-.container .devilsrow :nth-child(12) {
+.container .shading-row :nth-child(12) {
   background-color: #666666;
   color: #999999;
 }
-.container .devilsrow :nth-child(13) {
+.container .shading-row :nth-child(13) {
   background-color: #595959;
   color: #a6a6a6;
 }
-.container .devilsrow :nth-child(14) {
+.container .shading-row :nth-child(14) {
   background-color: #4d4d4d;
   color: #b3b3b3;
 }
-.container .devilsrow :nth-child(15) {
+.container .shading-row :nth-child(15) {
   background-color: #404040;
   color: #bfbfbf;
 }
-.container .devilsrow :nth-child(16) {
+.container .shading-row :nth-child(16) {
   background-color: #333333;
   color: #cccccc;
 }
-.container .devilsrow :nth-child(17) {
+.container .shading-row :nth-child(17) {
   background-color: #262626;
   color: #d9d9d9;
 }
-.container .devilsrow :nth-child(18) {
+.container .shading-row :nth-child(18) {
   background-color: #1a1a1a;
   color: #e6e6e6;
 }
-.container .devilsrow :nth-child(19) {
+.container .shading-row :nth-child(19) {
   background-color: #0d0d0d;
   color: #f2f2f2;
 }
-.container .devilsrow div {
+.container .shading-row div {
   color: inherit;
   border: 0.0625rem solid red;
   font-size: 1rem;
   width: 2.8125rem;
   height: 2.8125rem;
 }
-.container .devilsrow div.fs-1rem {
+.container .shading-row div.fs-1rem {
   font-size: 1rem;
 }
-.container .devilsrow div.fs-2rem {
+.container .shading-row div.fs-2rem {
   font-size: 2rem;
 }
-.container .devilsrow div.fs-3rem {
+.container .shading-row div.fs-3rem {
   font-size: 3rem;
 }
 

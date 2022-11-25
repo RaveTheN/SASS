@@ -4,6 +4,9 @@ $first-color: red;
 $second-color: blue;
 $third-color: green;
 
+$standard-border-px: 1;
+
+
 @function toRem($value) {
     $remValue: calc($value / 16) + rem; 
     @return $remValue;
@@ -11,7 +14,7 @@ $third-color: green;
 
 @mixin palette ($color, $border-color: green, $font-size: 1rem){
     color: $color;
-    border: toRem(1) solid $border-color;
+    border: toRem($standard-border-px) solid $border-color;
     font-size: $font-size;
 }
 
@@ -19,12 +22,11 @@ $third-color: green;
 
     color: $third-color;
     text-align: center;
-
 }
 
 
 .container {
-    border: 1px solid $first-color;
+    border: toRem($standard-border-px) solid $first-color;
     $margin: toRem(16);
 
     .exercise-title {
@@ -50,7 +52,8 @@ $third-color: green;
     
     }
 
-    .devilsrow {
+    
+    .shading-row {
         justify-content: space-between;
 
         @for $var from 1 to 20 {
@@ -90,12 +93,6 @@ $third-color: green;
                      }
                 }
             }
-             //con un ciclo for in 3 righe me ne uscivo
-            // @for $index from 1 through 3 {
-            //     &.fs-#{$index}rem {
-            //         font-size: $index + rem;
-            //     }
-            // }
         }
     }
 
@@ -104,7 +101,7 @@ $third-color: green;
     article {
     
         @extend %text;
-        border: toRem(1) solid $third-color;
+        border: toRem($standard-border-px) solid $third-color;
         padding: toRem(5);
         &.red {
         @include palette(red, green, 1rem);
