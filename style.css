@@ -1,4 +1,4 @@
-article, .container h2, .container .exercise-title {
+.container article, .container h2, .container .exercise-title {
   color: green;
   text-align: center;
 }
@@ -124,22 +124,21 @@ article, .container h2, .container .exercise-title {
 .container .shading-row div.fs-3rem {
   font-size: 3rem;
 }
-
-article {
+.container article {
   border: 0.0625rem solid green;
   padding: 0.3125rem;
 }
-article.red {
+.container article.red {
   color: red;
   border: 0.0625rem solid green;
   font-size: 1rem;
 }
-article.blue {
+.container article.blue {
   color: blue;
   border: 0.0625rem solid green;
   font-size: 1rem;
 }
-article.lorem {
+.container article.lorem {
   padding: 0.3125rem;
   width: 100%;
   color: green;

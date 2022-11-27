@@ -1,44 +1,36 @@
 @use "sass:color";
-
-$first-color: red;
-$second-color: blue;
-$third-color: green;
-
-$standard-border-px: 1;
+@use "functions.scss";
+@use "variables.scss";
 
 
-@function toRem($value) {
-    $remValue: calc($value / 16) + rem; 
-    @return $remValue;
-}
-
-@mixin palette ($color, $border-color: green, $font-size: 1rem){
+@mixin palette ($color, $border-color: variables.$third-color, $font-size: 1rem){
     color: $color;
-    border: toRem($standard-border-px) solid $border-color;
+    border: functions.toRem(variables.$standard-border-px) solid $border-color;
     font-size: $font-size;
 }
 
 %text {
 
-    color: $third-color;
+    color: variables.$third-color;
     text-align: center;
+
 }
 
 
 .container {
-    border: toRem($standard-border-px) solid $first-color;
-    $margin: toRem(16);
+    border: functions.toRem(variables.$standard-border-px) solid variables.$first-color;
+    $margin: functions.toRem(16);
 
     .exercise-title {
         @extend %text;
         text-decoration: underline;
-        text-decoration-color: $second-color;
-        text-decoration-thickness: toRem(1) ;
+        text-decoration-color: variables.$second-color;
+        text-decoration-thickness: functions.toRem(1) ;
     } 
 
     h2 {
         
-        @include palette($third-color, $first-color, 1rem);
+        @include palette(variables.$third-color, variables.$first-color, 1rem);
         @extend %text;
         margin: 0 40%;
         padding: 1rem;
@@ -46,13 +38,11 @@ $standard-border-px: 1;
     }
 
     section {
-        margin: $margin;
-        display: flex;
-        flex-direction: row;
-    
+    margin: $margin;
+    display: flex;
+    flex-direction: row;
     }
 
-    
     .shading-row {
         justify-content: space-between;
 
@@ -63,17 +53,17 @@ $standard-border-px: 1;
            }
            @if $var == 10 {
             :nth-child(#{$var}) {
-                   @include palette($first-color, $first-color, 1rem);
-                    background-color: $second-color;
+                   @include palette(variables.$first-color, variables.$first-color, 1rem);
+                    background-color: variables.$second-color;
                }
            }
        }
     
         div {
     
-            @include palette(inherit, $first-color, 1rem);
-            width: toRem(45);
-            height: toRem(45);
+            @include palette(inherit, variables.$first-color, 1rem);
+            width: functions.toRem(45);
+            height: functions.toRem(45);
     
             $sizes: 1rem, 2rem, 3rem;
             @each $size in $sizes {
@@ -96,25 +86,25 @@ $standard-border-px: 1;
         }
     }
 
-}
-
     article {
     
-        @extend %text;
-        border: toRem($standard-border-px) solid $third-color;
-        padding: toRem(5);
-        &.red {
-        @include palette(red, green, 1rem);
+    @extend %text;
+    border: functions.toRem(1) solid variables.$third-color;
+    padding: functions.toRem(5);
+    &.red {
+        @include palette(variables.$first-color, variables.$third-color, 1rem);
     }
 
     &.blue {
-        @include palette(blue, green, 1rem);
+        @include palette(variables.$second-color, variables.$third-color, 1rem);
     }
     &.lorem {
-        padding: toRem(5);
+        padding: functions.toRem(5);
         width: 100%;
-        @include palette(green, blue, 24px);
+        @include palette(variables.$third-color, variables.$second-color, 24px);
 
-    } 
+    }
+
+}
 
 }
