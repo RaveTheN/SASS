@@ -1,28 +1,22 @@
 @use "sass:color";
 @use "functions.scss";
-
-$standard-border-px: 1;
-
-$color-primary: red;
-$color-secondary: blue;
-$color-tertiary: green;
+@use "variables.scss";
 
 
-
-@mixin palette ($color, $border-color: green, $font-size: 1rem){
+@mixin palette ($color, $border-color: variables.$color-primary, $font-size: 1rem){
     color: $color;
-    border: functions.toRem($standard-border-px) solid $border-color;
+    border: functions.toRem(variables.$standard-border-px) solid $border-color;
     font-size: $font-size;
 }
 
 .exercise {
-border: functions.toRem($standard-border-px) solid $color-primary;
+border: functions.toRem(variables.$standard-border-px) solid variables.$color-primary;
 
     .exercise-title {
-        color: $color-tertiary;
+        color: variables.$color-tertiary;
         text-align: center;
         text-decoration: underline;
-        text-decoration-color: $color-secondary;
+        text-decoration-color: variables.$color-secondary;
         text-decoration-thickness: functions.toRem(1) ;
     } 
 
@@ -36,7 +30,7 @@ border: functions.toRem($standard-border-px) solid $color-primary;
 
     article {
     text-align: center;
-    border: functions.toRem($standard-border-px) solid $color-tertiary;
+    border: functions.toRem(variables.$standard-border-px) solid variables.$color-tertiary;
     padding: functions.toRem(5);
     &.red {
         @include palette(red, green, 1rem);
