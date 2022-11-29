@@ -50,14 +50,14 @@
             :nth-child(#{$var}) {
              background-color: color.adjust(white, $lightness: -5% * $var);
               color: color.adjust(black, $lightness: +5% * $var);
-           }
-           @if $var == 10 {
+                }
+        @if $var == 10 {
             :nth-child(#{$var}) {
-                   @include palette(variables.$first-color, variables.$first-color, 1rem);
-                    background-color: variables.$second-color;
-               }
-           }
-       }
+            @include palette(variables.$first-color, variables.$first-color, 1rem);
+            background-color: variables.$second-color;
+            }
+        }
+    }
     
         div {
     
@@ -69,18 +69,18 @@
             @each $size in $sizes {
             @if $size == 1rem {
                 &.fs-1rem {
-                             font-size: 1rem;
-                     }
+                font-size: 1rem;
+                }
             }
             @else if $size == 2rem {
                 &.fs-2rem {
-                             font-size: 2rem;
-                     }
+                font-size: 2rem;
+                }
             }
             @else {
                 &.fs-3rem {
-                             font-size: 3rem;
-                     }
+                font-size: 3rem;
+                }
                 }
             }
         }
@@ -101,7 +101,7 @@
     &.lorem {
         padding: functions.toRem(5);
         width: 100%;
-        @include palette(variables.$third-color, variables.$second-color, 24px);
+        @include palette(variables.$third-color, variables.$second-color, functions.toRem(24));
 
     }
 
