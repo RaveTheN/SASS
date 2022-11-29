@@ -45,23 +45,19 @@
 
     article {
     
-    @extend %text;
-    border: functions.toRem(1) solid variables.$third-color;
-    padding: functions.toRem(5);
-    &.red {
+        border: functions.toRem(1) solid variables.$third-color;
+        padding: functions.toRem(5);
+        &.red {
         @include palette(variables.$first-color, variables.$third-color, 1rem);
-    }
+            }
 
-    &.blue {
+        &.blue {
         @include palette(variables.$second-color, variables.$third-color, 1rem);
-    }
-    &.lorem {
+        }
+        &.lorem {
         padding: functions.toRem(5);
         width: 100%;
-        @include palette(variables.$third-color, variables.$second-color, 24px);
-
+        @include palette(variables.$third-color, variables.$second-color, functions.toRem(24));
+        }
     }
-
-}
-
 }
